@@ -1,0 +1,31 @@
+{
+    "name": "eslint-config-andremarquesdev",
+    "version": "1.0.0",
+    "description": "My personal ESLint setup for VS Code",
+    "main": "index.js",
+    "repository": "https://github.com/AndreMarquesDev/eslint-config-andremarquesdev.git",
+    "author": "André Marques <andremarquesdev.com>",
+    "keywords": [
+        "javascript",
+        "ecmascript",
+        "eslint",
+        "lint",
+        "config"
+    ],
+    "license": "MIT",
+    "engines": {
+        "node": "12",
+        "yarn": "1"
+    },
+    "dependencies": {
+        "@typescript-eslint/eslint-plugin": "^3.1.0",
+        "@typescript-eslint/parser": "^3.1.0",
+        "eslint": "^7.2.0",
+        "eslint-config-airbnb": "^18.1.0",
+        "eslint-plugin-babel": "^5.3.0",
+        "eslint-plugin-import": "^2.20.2",
+        "eslint-plugin-jsx-a11y": "^6.2.3",
+        "eslint-plugin-react": "^7.20.0",
+        "eslint-plugin-react-hooks": "^4.0.4"
+    }
+}

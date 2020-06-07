@@ -224,19 +224,13 @@ module.exports = {
         //
         // Typescript
         //
-
-        '@typescript-eslint/interface-name-prefix': [
-            2,
-            {
-                prefixWithI: 'always',
-            }
-        ],
         '@typescript-eslint/no-explicit-any': 'error',
         '@typescript-eslint/indent': 'off',
 
 
         // check overrides below
         '@typescript-eslint/explicit-function-return-type': 'off',
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/no-var-requires': 'off',
     },
     overrides: [{
@@ -247,6 +241,7 @@ module.exports = {
         ],
         rules: {
             '@typescript-eslint/explicit-function-return-type': 'error',
+            '@typescript-eslint/explicit-module-boundary-types': 'error',
             '@typescript-eslint/no-var-requires': 'error',
         }
     }],

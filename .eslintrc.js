@@ -6,11 +6,16 @@ module.exports = {
         'plugin:@typescript-eslint/eslint-recommended',
         'plugin:@typescript-eslint/recommended',
         'plugin:import/typescript',
+        'plugin:jsx-a11y/recommended',
+        'plugin:jest/recommended',
     ],
     plugins: [
         'babel',
         '@typescript-eslint/eslint-plugin',
         'react-hooks',
+        'jsx-a11y',
+        'jest',
+        'putout',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -46,6 +51,26 @@ module.exports = {
                     'URL',
                     'top',
                     'Top',
+                    'req',
+                    'res',
+                    'key',
+                    'Key',
+                    'all',
+                    'All',
+                    'of',
+                    'Of',
+                    'src',
+                    'Src',
+                    'alt',
+                    'Alt',
+                    'cta',
+                    'Cta',
+                    'add',
+                    'Add',
+                    'min',
+                    'Min',
+                    'max',
+                    'Max',
                 ]
             }
         ],
@@ -64,6 +89,8 @@ module.exports = {
                     '**/*.test.ts',
                     '**/*.test.tsx',
                     '**/tests/*.js',
+                    '**/*.dev.js',
+                    '**/*.dev.ts',
                 ]
             }
         ],
@@ -75,6 +102,7 @@ module.exports = {
         ],
         'import/prefer-default-export': 'off',
         radix: 'off',
+        'no-plusplus': 'off',
 
 
         //
@@ -90,11 +118,42 @@ module.exports = {
             'error',
             'inside',
         ],
+        'function-paren-newline': [
+            'error',
+            'never',
+        ],
 
         //
         // Spacings
         //
 
+        'object-curly-newline': [
+            'error',
+            {
+                ObjectExpression: {
+                    minProperties: 1
+                },
+                ImportDeclaration: 'never',
+                ExportDeclaration: {
+                    multiline: true,
+                    minProperties: 3,
+                }
+            }
+        ],
+        'object-property-newline': [
+            'error',
+            {
+                'allowAllPropertiesOnSameLine': false
+            }
+        ],
+        'putout/destructuring-as-function-argument': 'error',
+        'putout/single-property-destructuring': 'error',
+        'putout/multiple-properties-destructuring': [
+            'error',
+            {
+                minProperties: 2,
+            }
+        ],
         indent: [
             'error',
             4,
@@ -198,11 +257,9 @@ module.exports = {
             'error',
             4
         ],
-        'react/jsx-max-props-per-line': [
+        'react/jsx-first-prop-new-line': [
             1,
-            {
-                'maximum': 2
-            }
+            'multiline-multiprop',
         ],
         'react/jsx-sort-props': [
             1,
@@ -212,6 +269,7 @@ module.exports = {
                 reservedFirst: true,
             }
         ],
+        'react/jsx-props-no-spreading': 'error',
         'react/jsx-curly-spacing': [
             2,
             {
@@ -226,23 +284,32 @@ module.exports = {
         //
         '@typescript-eslint/no-explicit-any': 'error',
         '@typescript-eslint/indent': 'off',
-
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
+        '@typescript-eslint/ban-ts-ignore': 'off',
 
         // check overrides below
         '@typescript-eslint/explicit-function-return-type': 'off',
-        '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/no-var-requires': 'off',
     },
     overrides: [{
-        // enable the rule specifically for TypeScript files
+        // specific rules for TypeScript files
         files: [
             '*.ts',
             '*.tsx',
         ],
         rules: {
             '@typescript-eslint/explicit-function-return-type': 'error',
-            '@typescript-eslint/explicit-module-boundary-types': 'error',
             '@typescript-eslint/no-var-requires': 'error',
         }
+    }, {
+        // specific rules for test files
+        files: [
+            '*test.js',
+            '*test.ts',
+            '*test.tsx',
+        ],
+        rules: {
+            'react/jsx-props-no-spreading': 'off'
+        }
     }],
-}
+};

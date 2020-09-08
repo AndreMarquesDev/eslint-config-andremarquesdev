@@ -1,5 +1,11 @@
 module.exports = {
     root: true,
+    env: {
+        browser: true,
+        es6: true,
+        jest: true,
+        node: true,
+    },
     extends: [
         'airbnb',
         'airbnb/hooks',
@@ -286,6 +292,17 @@ module.exports = {
         '@typescript-eslint/indent': 'off',
         '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/ban-ts-ignore': 'off',
+        '@typescript-eslint/naming-convention': [
+            'error',
+            {
+                'selector': 'interface',
+                'format': ['PascalCase'],
+                'custom': {
+                    'regex': '^I[A-Z]',
+                    'match': false
+                }
+            }
+        ],
 
         // check overrides below
         '@typescript-eslint/explicit-function-return-type': 'off',

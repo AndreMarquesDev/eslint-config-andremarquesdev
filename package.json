@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-andremarquesdev",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "My personal ESLint setup for VS Code",
     "main": "index.js",
     "repository": "https://github.com/AndreMarquesDev/eslint-config-andremarquesdev.git",
@@ -24,9 +24,7 @@
         "eslint-config-airbnb": "^18.1.0",
         "eslint-plugin-babel": "^5.3.0",
         "eslint-plugin-import": "^2.20.2",
-        "eslint-plugin-jest": "^24.0.0",
         "eslint-plugin-jsx-a11y": "^6.2.3",
-        "eslint-plugin-putout": "^5.0.2",
         "eslint-plugin-react": "^7.20.0",
         "eslint-plugin-react-hooks": "^4.0.4"
     }

@@ -3,7 +3,6 @@ module.exports = {
     env: {
         browser: true,
         es6: true,
-        jest: true,
         node: true,
     },
     extends: [
@@ -13,15 +12,12 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
         'plugin:import/typescript',
         'plugin:jsx-a11y/recommended',
-        'plugin:jest/recommended',
     ],
     plugins: [
         'babel',
         '@typescript-eslint/eslint-plugin',
         'react-hooks',
         'jsx-a11y',
-        'jest',
-        'putout',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -150,14 +146,6 @@ module.exports = {
             'error',
             {
                 'allowAllPropertiesOnSameLine': false
-            }
-        ],
-        'putout/destructuring-as-function-argument': 'error',
-        'putout/single-property-destructuring': 'error',
-        'putout/multiple-properties-destructuring': [
-            'error',
-            {
-                minProperties: 2,
             }
         ],
         indent: [

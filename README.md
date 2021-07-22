@@ -11,10 +11,11 @@ ESLint config used by [AndreMarquesDev](https://github.com/AndreMarquesDev)
 
 ## Supports
 
-* JavaScript
-* TypeScript
-* React
-* React Hooks
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">![JavaScript Badge](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)</a>
+<a href="https://www.typescriptlang.org/" target="_blank">![Typescript Badge](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)</a>
+<a href="https://reactjs.org" target="_blank">![React Badge](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)</a>
+<a href="https://reactjs.org/docs/hooks-intro.html" target="_blank">![React Hooks Badge](https://img.shields.io/badge/React_Hooks-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)</a>
+<a href="https://prettier.io/" target="_blank">![Prettier Badge](https://img.shields.io/badge/Prettier-1B2B34?style=for-the-badge&logo=prettier&logoColor=61DAFB)</a>
 
 ## How to use
 

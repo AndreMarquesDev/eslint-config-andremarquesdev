@@ -12,6 +12,7 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
         'plugin:import/typescript',
         'plugin:jsx-a11y/recommended',
+        'plugin:prettier/recommended',
     ],
     plugins: [
         'babel',
@@ -274,6 +275,12 @@ module.exports = {
 
 
         //
+        //
+        // a11y
+        'jsx-a11y/label-has-associated-control': 'off',
+
+
+        //
         // Typescript
         //
         '@typescript-eslint/no-explicit-any': 'error',
@@ -291,6 +298,26 @@ module.exports = {
                 }
             }
         ],
+
+
+        //
+        // Prettier config
+        //
+        'prettier/prettier': [
+            'error',
+            {
+                printWidth: 100,
+                singleQuote: true,
+                trailingComma: 'es5',
+                tabWidth: 4,
+                semi: true,
+                jsxSingleQuote: false,
+                jsxBracketSameLine: false,
+                arrowParens: 'avoid',
+                endOfLine: 'auto',
+            },
+        ],
+
 
         // check overrides below
         '@typescript-eslint/explicit-function-return-type': 'off',

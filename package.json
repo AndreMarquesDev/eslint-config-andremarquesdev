@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-andremarquesdev",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "description": "ESLint config used by andremarquesdev.com",
     "main": "index.js",
     "repository": "https://github.com/AndreMarquesDev/eslint-config-andremarquesdev.git",
@@ -28,6 +28,7 @@
         "eslint": "7.31.0",
         "eslint-config-airbnb": "^18.2.1",
         "eslint-config-prettier": "^8.3.0",
+        "eslint-import-resolver-typescript": "^2.4.0",
         "eslint-plugin-babel": "^5.3.1",
         "eslint-plugin-import": "^2.23.4",
         "eslint-plugin-jsx-a11y": "^6.4.1",

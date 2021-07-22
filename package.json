@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-andremarquesdev",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "ESLint config used by andremarquesdev.com",
     "main": "index.js",
     "repository": "https://github.com/AndreMarquesDev/eslint-config-andremarquesdev.git",
@@ -33,7 +33,8 @@
         "eslint-plugin-jsx-a11y": "^6.4.1",
         "eslint-plugin-prettier": "^3.4.0",
         "eslint-plugin-react": "^7.24.0",
-        "eslint-plugin-react-hooks": "^4.2.0"
+        "eslint-plugin-react-hooks": "^4.2.0",
+        "prettier": "^2.3.2"
     },
     "peerDependencies": {
         "eslint": "7.31.0"

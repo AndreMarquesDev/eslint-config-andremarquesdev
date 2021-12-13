@@ -63,26 +63,6 @@ module.exports = {
         //
         // spacings
         //
-
-        'object-curly-newline': [
-            'error',
-            {
-                ObjectExpression: {
-                    minProperties: 1,
-                },
-                ImportDeclaration: 'never',
-                ExportDeclaration: {
-                    multiline: true,
-                    minProperties: 3,
-                },
-            },
-        ],
-        'object-property-newline': [
-            'error',
-            {
-                allowAllPropertiesOnSameLine: false,
-            },
-        ],
         indent: [
             'error',
             4,
@@ -252,6 +232,7 @@ module.exports = {
                 '@typescript-eslint/indent': 'off',
                 '@typescript-eslint/explicit-module-boundary-types': 'off',
                 '@typescript-eslint/ban-ts-ignore': 'off',
+                '@typescript-eslint/ban-ts-comment': 'off',
             },
         },
         {

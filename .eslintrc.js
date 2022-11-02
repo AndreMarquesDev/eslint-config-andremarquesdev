@@ -117,7 +117,9 @@ module.exports = {
         //
 
         'react/require-default-props': 'off',
-        'react/require-no-danger': 'off',
+        'react/function-component-definition': 'off',
+        'react/no-unknown-property': 'off',
+        'react/no-danger': 'off',
         'react/jsx-no-bind': [
             2,
             {

@@ -11,11 +11,14 @@ ESLint config used by [AndreMarquesDev](https://github.com/AndreMarquesDev)
 
 ## Supports
 
+<a href="https://eslint.org/" target="_blank">![ESLint Badge](https://img.shields.io/badge/ESLint_V8-4B3263?style=for-the-badge&logo=eslint&logoColor=white)</a>
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">![JavaScript Badge](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)</a>
 <a href="https://www.typescriptlang.org/" target="_blank">![Typescript Badge](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)</a>
 <a href="https://reactjs.org" target="_blank">![React Badge](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)</a>
 <a href="https://reactjs.org/docs/hooks-intro.html" target="_blank">![React Hooks Badge](https://img.shields.io/badge/React_Hooks-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)</a>
 <a href="https://prettier.io/" target="_blank">![Prettier Badge](https://img.shields.io/badge/Prettier-1B2B34?style=for-the-badge&logo=prettier&logoColor=61DAFB)</a>
+<a href="https://jestjs.io/" target="_blank">![Jest Badge](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)</a>
+<a href="https://testing-library.com/" target="_blank">![Testing Library Badge](https://img.shields.io/badge/-TestingLibrary-%23E33332?style=for-the-badge&logo=testing-library&logoColor=white)</a>
 
 ## How to use
 
@@ -49,3 +52,15 @@ module.exports = {
   "lint:fix": "tsc --noEmit && eslint . --ext .js,.ts,.tsx --fix"
 },
 ```
+
+### Author
+
+André Marques  
+[Website](https://andremarquesdev.com)  
+[GitHub](https://github.com/AndreMarquesDev)  
+[CodePen](https://codepen.io/AndreMarquesDev)  
+[Twitter](https://twitter.com/axxyJS)  
+
+### License
+
+MIT

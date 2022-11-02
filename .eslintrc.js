@@ -11,20 +11,12 @@ module.exports = {
         'plugin:jsx-a11y/recommended',
         'plugin:prettier/recommended',
     ],
-    plugins: ['babel', 'react-hooks', 'jsx-a11y'],
+    plugins: ['react-hooks', 'jsx-a11y'],
     rules: {
         //
-        // general
+        // General
         //
 
-        // enforces a minimum identifier length convention
-        'id-length': [
-            'error',
-            {
-                min: 3,
-                exceptions: ['Id', 'id', 'of', 'Of'],
-            },
-        ],
         // disallows the renaming of import, export and destructured assignments to the same name
         'no-useless-rename': 'error',
         'max-len': 'off',
@@ -114,13 +106,8 @@ module.exports = {
             'error',
             'never',
             {
-                ignorePattern: 'TODO:',
-            },
-        ],
-        'line-comment-position': [
-            'error',
-            {
-                position: 'above',
+                ignorePattern: 'TODO',
+                ignoreConsecutiveComments: true
             },
         ],
         'multiline-comment-style': ['warn', 'separate-lines'],
@@ -129,6 +116,8 @@ module.exports = {
         // react
         //
 
+        'react/require-default-props': 'off',
+        'react/require-no-danger': 'off',
         'react/jsx-no-bind': [
             2,
             {
@@ -238,6 +227,8 @@ module.exports = {
         {
             // specific rules for test files
             files: ['*test.js', '*test.ts', '*test.tsx'],
+            extends: ['plugin:jest/recommended', 'plugin:testing-library/react'],
+            plugins: ['jest', 'testing-library'],
             rules: {
                 'react/jsx-props-no-spreading': 'off',
             },

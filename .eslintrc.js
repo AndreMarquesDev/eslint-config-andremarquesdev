@@ -11,6 +11,7 @@ module.exports = {
         'plugin:jsx-a11y/recommended',
         'plugin:prettier/recommended',
     ],
+    ignorePatterns: ['!.*'],
     plugins: ['react-hooks', 'jsx-a11y'],
     rules: {
         //
@@ -31,6 +32,8 @@ module.exports = {
                     '**/tests/*.js',
                     '**/*.dev.js',
                     '**/*.dev.ts',
+                    '**/cypress/**',
+                    '**/e2e/**',
                 ],
             },
         ],

@@ -2,7 +2,6 @@
 
 [![npm](https://img.shields.io/npm/v/eslint-config-andremarquesdev)](https://www.npmjs.com/package/eslint-config-andremarquesdev)
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/eslint-config-andremarquesdev)
-[![David](https://img.shields.io/david/AndreMarquesDev/eslint-config-andremarquesdev)](https://www.npmjs.com/package/eslint-config-andremarquesdev)
 [![npm peer dependency version](https://img.shields.io/npm/dependency-version/eslint-config-andremarquesdev/peer/eslint)](https://eslint.org/)
 [![GitHub license](https://img.shields.io/github/license/AndreMarquesDev/eslint-config-andremarquesdev)](https://github.com/AndreMarquesDev/eslint-config-andremarquesdev/blob/master/LICENSE)
 [![GitHub last commit](https://img.shields.io/github/last-commit/AndreMarquesDev/eslint-config-andremarquesdev)](https://github.com/AndreMarquesDev/eslint-config-andremarquesdev)

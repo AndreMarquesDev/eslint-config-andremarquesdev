@@ -23,19 +23,19 @@ ESLint config used by [AndreMarquesDev](https://github.com/AndreMarquesDev)
 
 1. Install the package:
 
-```js
+```sh
 npm install --dev eslint-config-andremarquesdev
 ```
 
 or
 
-```js
+```sh
 yarn add --dev eslint-config-andremarquesdev
 ```
 
 2. Create a `.eslintrc.js` file in the root of your project's directory (it should live where package.json does). It should look like this:
 
-```js
+```sh
 module.exports = {
     extends: [
         'andremarquesdev',
@@ -47,10 +47,19 @@ module.exports = {
 
 ```json
 "scripts": {
-  "lint": "tsc --noEmit && eslint . --ext .js,.ts,.tsx",
-  "lint:fix": "tsc --noEmit && eslint . --ext .js,.ts,.tsx --fix"
+  "lint": "eslint . --ext .js,.ts,.tsx",
+  "lint:fix": "eslint . --ext .js,.ts,.tsx --fix"
 },
 ```
+
+## How to publish to npm
+
+1. Manually increment the `version` field in [package.json](package.json);
+2. Commit the changes, including the [package.json](package.json) change mentioned in the previous step;
+3. Create a new git tag with `git tag <version>`;
+4. Push the commit as usual;
+5. Push the new tag with `git push origin --tags`;
+6. Run `yarn npm publish`.
 
 ### Author
 

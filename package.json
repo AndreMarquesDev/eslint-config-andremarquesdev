@@ -1,11 +1,10 @@
 {
     "name": "eslint-config-andremarquesdev",
-    "version": "1.3.3",
+    "version": "1.3.4",
     "description": "ESLint config used by andremarquesdev.com",
     "main": "index.js",
     "repository": "https://github.com/AndreMarquesDev/eslint-config-andremarquesdev.git",
     "author": "André Marques <andregm_7@hotmail.com> (andremarquesdev.com)",
-    "private": false,
     "keywords": [
         "javascript",
         "ecmascript",
@@ -20,7 +19,8 @@
         "email": "andregm_7@hotmail.com"
     },
     "engines": {
-        "node": ">=14.18.0"
+        "node": ">=20.11.0 <21",
+        "yarn": "4.2.2"
     },
     "dependencies": {
         "@typescript-eslint/eslint-plugin": "^6.6.0",
@@ -43,5 +43,6 @@
     "resolutions": {
         "json5": "^2.2.3",
         "semver": "^7.5.4"
-    }
+    },
+    "packageManager": "yarn@4.2.2"
 }
